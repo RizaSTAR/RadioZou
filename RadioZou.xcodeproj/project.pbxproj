@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A13C6100ACFDF8183A93F07 /* Pods_RadioZouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4DA607D3BCFDF7A0453B59 /* Pods_RadioZouTests.framework */; };
+		2408E22AA055A405472C5096 /* Pods_RadioZou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8A6BBDBC41CC0A0FB6AB0C /* Pods_RadioZou.framework */; };
+		5F7BBF011F0B7A6C007A1EA9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F7BBF001F0B7A6C007A1EA9 /* Settings.bundle */; };
+		5F7BBF031F0B7CAF007A1EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7BBF021F0B7CAF007A1EA9 /* Assets.xcassets */; };
+		5F9AB67C1F0390F200E2B93F /* TimelineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AB67B1F0390F200E2B93F /* TimelineManager.swift */; };
+		5F9AB6BD1F04E5EF00E2B93F /* LTLTalkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AB6BC1F04E5EF00E2B93F /* LTLTalkManager.swift */; };
+		5F9AB6BF1F04EE2700E2B93F /* TootStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AB6BE1F04EE2700E2B93F /* TootStringManager.swift */; };
+		5F9AB6C31F0A286900E2B93F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9AB6C21F0A286900E2B93F /* Media.xcassets */; };
+		5F9C131C1EF22C3900D79F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C131B1EF22C3900D79F3A /* AppDelegate.swift */; };
+		5F9C131E1EF22C3900D79F3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C131D1EF22C3900D79F3A /* MainViewController.swift */; };
+		5F9C13211EF22C3900D79F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9C131F1EF22C3900D79F3A /* Main.storyboard */; };
+		5F9C13261EF22C3900D79F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9C13241EF22C3900D79F3A /* LaunchScreen.storyboard */; };
+		5F9C13311EF22C3900D79F3A /* RadioZouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C13301EF22C3900D79F3A /* RadioZouTests.swift */; };
+		5F9C133C1EF22C3900D79F3A /* RadioZouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C133B1EF22C3900D79F3A /* RadioZouUITests.swift */; };
+		5F9C134B1EF234AD00D79F3A /* ConfigRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C134A1EF234AD00D79F3A /* ConfigRootViewController.swift */; };
+		5F9C134D1EF234F900D79F3A /* InstanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C134C1EF234F900D79F3A /* InstanceDetailViewController.swift */; };
+		5FBCC52C1EF283B400BCC69D /* MastodonInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCC52B1EF283B400BCC69D /* MastodonInstance.swift */; };
+		5FBCC52F1EF3B72000BCC69D /* MstdnAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCC52E1EF3B72000BCC69D /* MstdnAccessManager.swift */; };
+		5FBCC5321EF3EE0C00BCC69D /* MstdnAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCC5311EF3EE0C00BCC69D /* MstdnAuthViewController.swift */; };
+		DDEAA605AE48D0F2CC69D6E8 /* Pods_RadioZouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF11E823B6AA48C91F33BF7B /* Pods_RadioZouUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F9C132D1EF22C3900D79F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9C13101EF22C3900D79F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F9C13171EF22C3900D79F3A;
+			remoteInfo = RadioZou;
+		};
+		5F9C13381EF22C3900D79F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9C13101EF22C3900D79F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F9C13171EF22C3900D79F3A;
+			remoteInfo = RadioZou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0595B833CC366C5483FC583B /* Pods-RadioZouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZouTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZouTests/Pods-RadioZouTests.release.xcconfig"; sourceTree = "<group>"; };
+		1AC7B60CC5188DEBC99C5467 /* Pods-RadioZou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZou.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZou/Pods-RadioZou.release.xcconfig"; sourceTree = "<group>"; };
+		5D4DA607D3BCFDF7A0453B59 /* Pods_RadioZouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioZouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7BBF001F0B7A6C007A1EA9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5F7BBF021F0B7CAF007A1EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F9AB67B1F0390F200E2B93F /* TimelineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineManager.swift; sourceTree = "<group>"; };
+		5F9AB6BC1F04E5EF00E2B93F /* LTLTalkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTLTalkManager.swift; sourceTree = "<group>"; };
+		5F9AB6BE1F04EE2700E2B93F /* TootStringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TootStringManager.swift; sourceTree = "<group>"; };
+		5F9AB6C01F07C3D600E2B93F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		5F9AB6C11F07C3D700E2B93F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F9AB6C21F0A286900E2B93F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5F9C13181EF22C3900D79F3A /* RadioZou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioZou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9C131B1EF22C3900D79F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F9C131D1EF22C3900D79F3A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F9C13201EF22C3900D79F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F9C13251EF22C3900D79F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F9C13271EF22C3900D79F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9C132C1EF22C3900D79F3A /* RadioZouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioZouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9C13301EF22C3900D79F3A /* RadioZouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioZouTests.swift; sourceTree = "<group>"; };
+		5F9C13321EF22C3900D79F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9C13371EF22C3900D79F3A /* RadioZouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioZouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9C133B1EF22C3900D79F3A /* RadioZouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioZouUITests.swift; sourceTree = "<group>"; };
+		5F9C133D1EF22C3900D79F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9C134A1EF234AD00D79F3A /* ConfigRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigRootViewController.swift; sourceTree = "<group>"; };
+		5F9C134C1EF234F900D79F3A /* InstanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstanceDetailViewController.swift; sourceTree = "<group>"; };
+		5FBCC52B1EF283B400BCC69D /* MastodonInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MastodonInstance.swift; sourceTree = "<group>"; };
+		5FBCC52E1EF3B72000BCC69D /* MstdnAccessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstdnAccessManager.swift; sourceTree = "<group>"; };
+		5FBCC5301EF3BBB600BCC69D /* Bridgeing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridgeing-Header.h"; sourceTree = "<group>"; };
+		5FBCC5311EF3EE0C00BCC69D /* MstdnAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstdnAuthViewController.swift; sourceTree = "<group>"; };
+		71D4AD67BA495DEA7F5906ED /* Pods-RadioZouUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZouUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZouUITests/Pods-RadioZouUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A15E1AD52BBF391BE4CAC376 /* Pods-RadioZou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZou/Pods-RadioZou.debug.xcconfig"; sourceTree = "<group>"; };
+		CF11E823B6AA48C91F33BF7B /* Pods_RadioZouUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioZouUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BDBE86A4E2125A58756930 /* Pods-RadioZouUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZouUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZouUITests/Pods-RadioZouUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2EB0586442F568BD1F9A6AF /* Pods-RadioZouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioZouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioZouTests/Pods-RadioZouTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE8A6BBDBC41CC0A0FB6AB0C /* Pods_RadioZou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioZou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F9C13151EF22C3900D79F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2408E22AA055A405472C5096 /* Pods_RadioZou.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C13291EF22C3900D79F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A13C6100ACFDF8183A93F07 /* Pods_RadioZouTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C13341EF22C3900D79F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDEAA605AE48D0F2CC69D6E8 /* Pods_RadioZouUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9C130F1EF22C3900D79F3A = {
+			isa = PBXGroup;
+			children = (
+				5F9C131A1EF22C3900D79F3A /* RadioZou */,
+				5F9C132F1EF22C3900D79F3A /* RadioZouTests */,
+				5F9C133A1EF22C3900D79F3A /* RadioZouUITests */,
+				5F9C13191EF22C3900D79F3A /* Products */,
+				6AEB0BFC4B33052A02B6493F /* Pods */,
+				FDBF784B535AC5E97155A87B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F9C13191EF22C3900D79F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C13181EF22C3900D79F3A /* RadioZou.app */,
+				5F9C132C1EF22C3900D79F3A /* RadioZouTests.xctest */,
+				5F9C13371EF22C3900D79F3A /* RadioZouUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F9C131A1EF22C3900D79F3A /* RadioZou */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC52D1EF3B6F900BCC69D /* Manager */,
+				5FBCC52A1EF2833900BCC69D /* Realm */,
+				5F9C13491EF2340C00D79F3A /* ViewController */,
+				5F9C131B1EF22C3900D79F3A /* AppDelegate.swift */,
+				5F9C131F1EF22C3900D79F3A /* Main.storyboard */,
+				5F7BBF021F0B7CAF007A1EA9 /* Assets.xcassets */,
+				5F9AB6C21F0A286900E2B93F /* Media.xcassets */,
+				5F9C13241EF22C3900D79F3A /* LaunchScreen.storyboard */,
+				5F9C13271EF22C3900D79F3A /* Info.plist */,
+				5FBCC5301EF3BBB600BCC69D /* Bridgeing-Header.h */,
+				5F7BBF001F0B7A6C007A1EA9 /* Settings.bundle */,
+			);
+			path = RadioZou;
+			sourceTree = "<group>";
+		};
+		5F9C132F1EF22C3900D79F3A /* RadioZouTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C13301EF22C3900D79F3A /* RadioZouTests.swift */,
+				5F9C13321EF22C3900D79F3A /* Info.plist */,
+			);
+			path = RadioZouTests;
+			sourceTree = "<group>";
+		};
+		5F9C133A1EF22C3900D79F3A /* RadioZouUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C133B1EF22C3900D79F3A /* RadioZouUITests.swift */,
+				5F9C133D1EF22C3900D79F3A /* Info.plist */,
+			);
+			path = RadioZouUITests;
+			sourceTree = "<group>";
+		};
+		5F9C13491EF2340C00D79F3A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C131D1EF22C3900D79F3A /* MainViewController.swift */,
+				5F9C134A1EF234AD00D79F3A /* ConfigRootViewController.swift */,
+				5F9C134C1EF234F900D79F3A /* InstanceDetailViewController.swift */,
+				5FBCC5311EF3EE0C00BCC69D /* MstdnAuthViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5FBCC52A1EF2833900BCC69D /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC52B1EF283B400BCC69D /* MastodonInstance.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		5FBCC52D1EF3B6F900BCC69D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCC52E1EF3B72000BCC69D /* MstdnAccessManager.swift */,
+				5F9AB67B1F0390F200E2B93F /* TimelineManager.swift */,
+				5F9AB6BC1F04E5EF00E2B93F /* LTLTalkManager.swift */,
+				5F9AB6BE1F04EE2700E2B93F /* TootStringManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6AEB0BFC4B33052A02B6493F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A15E1AD52BBF391BE4CAC376 /* Pods-RadioZou.debug.xcconfig */,
+				1AC7B60CC5188DEBC99C5467 /* Pods-RadioZou.release.xcconfig */,
+				F2EB0586442F568BD1F9A6AF /* Pods-RadioZouTests.debug.xcconfig */,
+				0595B833CC366C5483FC583B /* Pods-RadioZouTests.release.xcconfig */,
+				F2BDBE86A4E2125A58756930 /* Pods-RadioZouUITests.debug.xcconfig */,
+				71D4AD67BA495DEA7F5906ED /* Pods-RadioZouUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDBF784B535AC5E97155A87B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8A6BBDBC41CC0A0FB6AB0C /* Pods_RadioZou.framework */,
+				5D4DA607D3BCFDF7A0453B59 /* Pods_RadioZouTests.framework */,
+				CF11E823B6AA48C91F33BF7B /* Pods_RadioZouUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F9C13171EF22C3900D79F3A /* RadioZou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9C13401EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZou" */;
+			buildPhases = (
+				3D630C85C20B26C046F9878D /* [CP] Check Pods Manifest.lock */,
+				5F9C13141EF22C3900D79F3A /* Sources */,
+				5F9C13151EF22C3900D79F3A /* Frameworks */,
+				5F9C13161EF22C3900D79F3A /* Resources */,
+				30107781C5541C50EB765BCB /* [CP] Embed Pods Frameworks */,
+				941E81E1787D300D5093AF38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioZou;
+			productName = RadioZou;
+			productReference = 5F9C13181EF22C3900D79F3A /* RadioZou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F9C132B1EF22C3900D79F3A /* RadioZouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9C13431EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZouTests" */;
+			buildPhases = (
+				F115858D7A26AA485AC2BEED /* [CP] Check Pods Manifest.lock */,
+				5F9C13281EF22C3900D79F3A /* Sources */,
+				5F9C13291EF22C3900D79F3A /* Frameworks */,
+				5F9C132A1EF22C3900D79F3A /* Resources */,
+				DDE16722269C231479D37D81 /* [CP] Embed Pods Frameworks */,
+				8162FEDD59941C6F26F1E699 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F9C132E1EF22C3900D79F3A /* PBXTargetDependency */,
+			);
+			name = RadioZouTests;
+			productName = RadioZouTests;
+			productReference = 5F9C132C1EF22C3900D79F3A /* RadioZouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F9C13361EF22C3900D79F3A /* RadioZouUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9C13461EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZouUITests" */;
+			buildPhases = (
+				7C1F5BDB7D96CFE757E32592 /* [CP] Check Pods Manifest.lock */,
+				5F9C13331EF22C3900D79F3A /* Sources */,
+				5F9C13341EF22C3900D79F3A /* Frameworks */,
+				5F9C13351EF22C3900D79F3A /* Resources */,
+				37B19F8FA0EB819C8E62BFC1 /* [CP] Embed Pods Frameworks */,
+				D89FF79ED62FBB022E55132D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F9C13391EF22C3900D79F3A /* PBXTargetDependency */,
+			);
+			name = RadioZouUITests;
+			productName = RadioZouUITests;
+			productReference = 5F9C13371EF22C3900D79F3A /* RadioZouUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F9C13101EF22C3900D79F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Takahiro Niijima";
+				TargetAttributes = {
+					5F9C13171EF22C3900D79F3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F6G2A6KWLN;
+						ProvisioningStyle = Manual;
+					};
+					5F9C132B1EF22C3900D79F3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F6G2A6KWLN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F9C13171EF22C3900D79F3A;
+					};
+					5F9C13361EF22C3900D79F3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F6G2A6KWLN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F9C13171EF22C3900D79F3A;
+					};
+				};
+			};
+			buildConfigurationList = 5F9C13131EF22C3900D79F3A /* Build configuration list for PBXProject "RadioZou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 5F9C130F1EF22C3900D79F3A;
+			productRefGroup = 5F9C13191EF22C3900D79F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F9C13171EF22C3900D79F3A /* RadioZou */,
+				5F9C132B1EF22C3900D79F3A /* RadioZouTests */,
+				5F9C13361EF22C3900D79F3A /* RadioZouUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F9C13161EF22C3900D79F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9C13261EF22C3900D79F3A /* LaunchScreen.storyboard in Resources */,
+				5F7BBF011F0B7A6C007A1EA9 /* Settings.bundle in Resources */,
+				5F9AB6C31F0A286900E2B93F /* Media.xcassets in Resources */,
+				5F9C13211EF22C3900D79F3A /* Main.storyboard in Resources */,
+				5F7BBF031F0B7CAF007A1EA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C132A1EF22C3900D79F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C13351EF22C3900D79F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30107781C5541C50EB765BCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZou/Pods-RadioZou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37B19F8FA0EB819C8E62BFC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZouUITests/Pods-RadioZouUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D630C85C20B26C046F9878D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1F5BDB7D96CFE757E32592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8162FEDD59941C6F26F1E699 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZouTests/Pods-RadioZouTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		941E81E1787D300D5093AF38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZou/Pods-RadioZou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89FF79ED62FBB022E55132D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZouUITests/Pods-RadioZouUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE16722269C231479D37D81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioZouTests/Pods-RadioZouTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F115858D7A26AA485AC2BEED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F9C13141EF22C3900D79F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBCC52F1EF3B72000BCC69D /* MstdnAccessManager.swift in Sources */,
+				5F9C134D1EF234F900D79F3A /* InstanceDetailViewController.swift in Sources */,
+				5F9AB67C1F0390F200E2B93F /* TimelineManager.swift in Sources */,
+				5F9AB6BD1F04E5EF00E2B93F /* LTLTalkManager.swift in Sources */,
+				5F9C134B1EF234AD00D79F3A /* ConfigRootViewController.swift in Sources */,
+				5FBCC52C1EF283B400BCC69D /* MastodonInstance.swift in Sources */,
+				5F9C131E1EF22C3900D79F3A /* MainViewController.swift in Sources */,
+				5F9C131C1EF22C3900D79F3A /* AppDelegate.swift in Sources */,
+				5F9AB6BF1F04EE2700E2B93F /* TootStringManager.swift in Sources */,
+				5FBCC5321EF3EE0C00BCC69D /* MstdnAuthViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C13281EF22C3900D79F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9C13311EF22C3900D79F3A /* RadioZouTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C13331EF22C3900D79F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9C133C1EF22C3900D79F3A /* RadioZouUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F9C132E1EF22C3900D79F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F9C13171EF22C3900D79F3A /* RadioZou */;
+			targetProxy = 5F9C132D1EF22C3900D79F3A /* PBXContainerItemProxy */;
+		};
+		5F9C13391EF22C3900D79F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F9C13171EF22C3900D79F3A /* RadioZou */;
+			targetProxy = 5F9C13381EF22C3900D79F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F9C131F1EF22C3900D79F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F9C13201EF22C3900D79F3A /* Base */,
+				5F9AB6C01F07C3D600E2B93F /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F9C13241EF22C3900D79F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F9C13251EF22C3900D79F3A /* Base */,
+				5F9AB6C11F07C3D700E2B93F /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F9C133E1EF22C3900D79F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F9C133F1EF22C3900D79F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F9C13411EF22C3900D79F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15E1AD52BBF391BE4CAC376 /* Pods-RadioZou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.zou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9814380e-63af-4019-b30c-ac57c089e971";
+				PROVISIONING_PROFILE_SPECIFIER = "Develop-Zou";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F9C13421EF22C3900D79F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC7B60CC5188DEBC99C5467 /* Pods-RadioZou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.zou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "efb3f09b-9ca9-452b-a0b3-73e7827619f0";
+				PROVISIONING_PROFILE_SPECIFIER = "Dist-Zou";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5F9C13441EF22C3900D79F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EB0586442F568BD1F9A6AF /* Pods-RadioZouTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.RadioZouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioZou.app/RadioZou";
+			};
+			name = Debug;
+		};
+		5F9C13451EF22C3900D79F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0595B833CC366C5483FC583B /* Pods-RadioZouTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.RadioZouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioZou.app/RadioZou";
+			};
+			name = Release;
+		};
+		5F9C13471EF22C3900D79F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BDBE86A4E2125A58756930 /* Pods-RadioZouUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.RadioZouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RadioZou;
+			};
+			name = Debug;
+		};
+		5F9C13481EF22C3900D79F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D4AD67BA495DEA7F5906ED /* Pods-RadioZouUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F6G2A6KWLN;
+				INFOPLIST_FILE = RadioZouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizastar.RadioZouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RadioZou;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F9C13131EF22C3900D79F3A /* Build configuration list for PBXProject "RadioZou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C133E1EF22C3900D79F3A /* Debug */,
+				5F9C133F1EF22C3900D79F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9C13401EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C13411EF22C3900D79F3A /* Debug */,
+				5F9C13421EF22C3900D79F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9C13431EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C13441EF22C3900D79F3A /* Debug */,
+				5F9C13451EF22C3900D79F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9C13461EF22C3900D79F3A /* Build configuration list for PBXNativeTarget "RadioZouUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C13471EF22C3900D79F3A /* Debug */,
+				5F9C13481EF22C3900D79F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F9C13101EF22C3900D79F3A /* Project object */;
+}
